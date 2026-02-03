@@ -26,7 +26,9 @@ const Footer: React.FC = () => {
                 className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold transition-all group"
                 aria-label="Instagram"
               >
-                <Instagram className="w-4 h-4 text-white group-hover:text-brand-green" />
+                <div className="flex items-center justify-center">
+                  <Instagram className="w-4 h-4 text-white group-hover:text-brand-green" />
+                </div>
               </a>
               <a 
                 href="https://facebook.com/dbnfruits" 
@@ -35,7 +37,9 @@ const Footer: React.FC = () => {
                 className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold transition-all group"
                 aria-label="Facebook"
               >
-                <Facebook className="w-4 h-4 text-white group-hover:text-brand-green" />
+                <div className="flex items-center justify-center">
+                  <Facebook className="w-4 h-4 text-white group-hover:text-brand-green" />
+                </div>
               </a>
               <a 
                 href="https://twitter.com/dbnfruits" 
@@ -44,7 +48,9 @@ const Footer: React.FC = () => {
                 className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold transition-all group"
                 aria-label="Twitter"
               >
-                <Twitter className="w-4 h-4 text-white group-hover:text-brand-green" />
+                <div className="flex items-center justify-center">
+                  <Twitter className="w-4 h-4 text-white group-hover:text-brand-green" />
+                </div>
               </a>
             </div>
           </div>
@@ -103,14 +109,9 @@ const Footer: React.FC = () => {
           <p>&copy; {new Date().getFullYear()} DBN Fruits Luxury Export. All Rights Reserved.</p>
           <div className="flex items-center gap-2">
             <span>Crafted by</span>
-            <a 
-              href="https://dbn.engineering" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-brand-gold hover:text-white transition-colors"
-            >
-              DBN Engineering
-            </a>
+            <span className="text-brand-gold hover:text-white transition-colors cursor-default">
+              Abhishek Gujar
+            </span>
           </div>
         </div>
       </div>
